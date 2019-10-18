@@ -1,0 +1,55 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+
+.vendor-section {
+
+    .title-hr {
+        border: 1px solid $color-primary;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 10px;
+    }
+
+    .v-margin-bottom {
+        margin-bottom: 2rem;
+    }
+
+    .project-col {
+        padding: 10px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        width: 600px;
+        height: 400px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .input {
+        padding: 10px;
+    }
+
+    .select {
+        padding-left: 6px;
+    }
+
+    .more {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more-btn {
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+        // background-color:  $color-morebtncolor !important;
+    }
+
+}

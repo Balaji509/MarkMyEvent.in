@@ -1,0 +1,31 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+@import "../utilities/animations.scss";
+
+.services-section {
+    margin-top: 3rem;
+
+    .container {
+        margin: 2rem auto;
+    }
+
+    .project-col {
+        padding: 20px;
+    }
+
+    .project-box {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .service-name {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+}

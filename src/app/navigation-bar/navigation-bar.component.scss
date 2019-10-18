@@ -1,0 +1,51 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+
+.navbar-default {
+    /*background-color: white;*/
+    button:focus {
+        outline: 0px dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+    }
+    & a {
+        color: black;
+        font-size: .9rem;
+        font-family: 'Didact Gothic', sans-serif;
+        text-transform: uppercase;
+        &:hover {
+            color: $color-primary;
+        }
+        &:active {
+            color: $color-primary;   
+        }
+        &:focus {
+            color: $color-primary;   
+        }
+    }  
+
+    .navbar-toggler{
+        background-color: $color-lightgrey;
+        border-color: $color-black;
+
+        &:hover {
+            border-color: $color-white;
+        }
+        &:active {
+            border-color: $color-white;
+        } 
+        &:focus {
+            border-color: $color-white;
+        }
+    }
+
+    .navbar-list {
+        margin-right: 4rem;
+    }
+
+    .navbar-brand img{
+       width: 10rem;
+       margin-left: 5rem;
+       padding: 1rem;
+    }
+}
+

@@ -1,0 +1,89 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+
+.contact-section {
+
+    .container {
+        margin: 2rem auto;
+    }
+
+    .vl {
+        border-left: 1px solid green;
+        height: 300px;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .v-margin-bottom {
+        margin-bottom: 1rem;
+    }
+
+    .project-col {
+        padding: 10px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        width: 400px;
+        height: 550px;
+        background-color: $color-formcolor;
+        margin-top: 4rem;
+        border-radius: 25px;
+    }
+
+    .c-title {
+        margin-top: 1rem;
+        font-family: 'Cinzel' , serif;
+        font-weight: 400;
+        color: $color-white;
+    }
+
+    .c-head {
+        font-size: 20px;
+    }
+
+    .input {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .select {
+        padding-left: 6px;
+        border-radius: 15px;
+    }
+
+    .more {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more-btn {
+        height: 40px;
+        width: 120px;
+        border-radius: 20px;
+        color: $color-white;
+        border-color: $color-white;
+        // background-color:  $color-morebtncolor !important;
+    }
+
+    .addrss-logo {
+        height: 50px;
+        widows: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address-box2 {
+        margin-top: 1rem;
+    }
+
+    .address {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+}

@@ -1,0 +1,50 @@
+/* $primary-color = A9030A*/
+
+@import '../app/utilities/colors.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 3;
+}
+
+.row{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom {
+  margin-bottom: 4rem;
+}
+
+.u-title-hr {
+  border-top: 2px solid $color-primary;
+  margin-left: 36rem;
+  margin-right: 36rem;
+  animation: moveInLeft 1s ease 0s;
+}
+
+.u-title-text{
+  animation: moveInRight 1s ease 0s;
+}
+
+.u-title {
+  font-family: 'Cinzel' , serif;
+  font-weight: 700;
+}

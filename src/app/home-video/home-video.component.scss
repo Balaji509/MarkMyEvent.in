@@ -1,0 +1,289 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+@import "../utilities/animations.scss";
+
+.home-section {
+  position: relative;
+  height: 75vh;
+  min-height: 35rem;
+  width: 100%;
+  background-color: $color-black;
+}
+
+.company-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.work-process-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  //height: 95vh;
+
+  &--hr {
+    border-top: 3px solid black;
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .process-box {
+    margin: 3rem 3rem 3rem 3rem;
+    text-align: center;
+    height: auto;
+    width: auto;
+    position: relative;
+
+    &__icon {
+      margin-right: 3rem;
+      width: fit-content;
+      border-radius: 50%;
+      height: 12vh;
+      position: absolute;
+      right: 0rem; 
+      top: -3.8rem; 
+      z-index: 1;
+      background-color: $color-white;
+    
+       img {
+         background-size: cover;
+         width: 5rem;
+       }
+       &--border1 {
+        border: .4rem solid $color-darkpink;
+       }
+       &--border2 {
+        border: .4rem solid $color-darkblue;
+       }
+       &--border3 {
+        border: .4rem solid $color-darkgreen;
+       }
+       &--border4 {
+         border: .4rem solid $color-darkorange;
+       }
+    }
+
+    &__text{
+      //margin-top: -1rem;
+      border-top-left-radius: .3rem;
+      border-top-right-radius: .3rem;
+      border: .2rem transparent;
+      height: 40vh;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 50% 100%, 0% 89%);
+      color: $color-white;
+      font-family: 'Didact Gothic', sans-serif;
+      text-align: center;
+
+      &--hr {
+        padding-top: 1rem;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid $color-white;
+      }
+
+      &--title {
+        margin-top: .5rem;
+        text-transform: uppercase;
+      }
+
+      &--description {
+        margin-top: .5rem;
+        font-size: .9rem;
+      }
+    }
+
+    &__design1{
+      margin-top: -1.5rem;
+      height: 10vh;
+      clip-path: polygon(50% 43%, 100% 0%, 100% 50%, 50% 93%, 0 50%, 0 0%);
+    }
+
+    &__design2{
+     margin-top: -1.6rem;
+     clip-path:polygon(50% 75%, 100% 0, 100% 25%, 50% 100%, 0 25%, 0 0);
+     height: 5vh;
+    }
+
+    &--color1 {
+      background-image: linear-gradient($color-lightpink,$color-darkpink);
+       &--rev {
+        background-image: linear-gradient($color-darkpink, $color-lightpink);
+       }
+    }
+    &--color2 {
+      background-image: linear-gradient($color-lightblue,$color-darkblue);
+      &--rev {
+        background-image: linear-gradient($color-darkblue, $color-lightblue);
+       }
+    }
+    &--color3 {
+      background-image: linear-gradient($color-lightgreen, $color-darkgreen);
+      &--rev {
+        background-image: linear-gradient($color-darkgreen, $color-lightgreen);
+       }
+    }
+    &--color4 {
+      background-image: linear-gradient($color-lightorange, $color-darkorange);
+      &--rev {
+        background-image: linear-gradient($color-darkorange, $color-lightorange );
+       }
+    }
+  }
+}
+
+.we-offer-section {
+  background-image: url("../../assets/Mandala.png");
+  overflow: hidden;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 88vh;
+
+  .container {
+    margin: 0 auto;
+  }
+   p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+   }
+}
+ 
+.who-we-are-section {
+
+  height: 88vh;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.feedback-section {
+  height: 88vh;
+  
+  .container {
+    margin: 0 auto;
+  }
+
+  .feedback {
+    height: 60vh;
+    /*-webkit-box-shadow: 2px $color-black;  
+    -moz-box-shadow:    2px $color-black;  
+    box-shadow:         2px $color-black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+    margin-left: 2rem;
+
+    &-title {
+      height: 15vh;
+    }
+    &-description {
+      height: 39vh;
+    }
+    &-rating {
+      height: 6vh;
+      &--value {
+        text-align: center;
+        height: 5vh;
+      }
+      &--line {
+        height:1vh;
+        margin-right: 50%;
+      }
+
+    }
+    &-1-title{
+      background-image: linear-gradient(to left, $color-lightpink,$color-darkpink);
+    }
+    &-2-title{
+      background-image: linear-gradient(to left,$color-lightblue,$color-darkblue);
+    }
+    &-3-title {
+      background-image: linear-gradient(to left,$color-lightgreen, $color-darkgreen);
+    }
+    &-4-title {
+      background-image: linear-gradient(to left,$color-lightorange, $color-darkorange);
+    }
+
+    &-1-rating--line {
+      background-image: linear-gradient(to left, $color-lightpink,$color-darkpink);
+    }
+    &-2-rating--line {
+      background-image: linear-gradient(to left,$color-lightblue,$color-darkblue);
+    }
+    &-3-rating--line {
+      background-image: linear-gradient(to left,$color-lightgreen, $color-darkgreen);
+    }
+    &-4-rating--line {
+      background-image: linear-gradient(to left,$color-lightorange, $color-darkorange);
+    }
+    /*.star {
+      font-size: 1.5rem;
+      color: #b0c4de;
+    }*/
+    .feedback-1-star {
+      color: $color-darkpink;
+    }
+    .feedback-2-star {
+      color: $color-darkblue;
+    }
+    
+    .feedback-3-star {
+      color: $color-darkgreen;
+    }
+    .feedback-4-star {
+      color: $color-darkorange;   
+    }
+  }
+}
+
+.star {
+  font-size: 1.5rem;
+  color: transparent;
+}
+
+.filled-2 {
+  color: $color-darkblue;
+}
+.filled-3 {
+  color: $color-darkgreen;
+}
+.filled-4 {
+  color: $color-darkorange;
+}
+.bad-1 {
+  color: $color-thinpink;
+}
+.bad-2 {
+  color: $color-thinblue;
+}
+.bad-3 {
+  color: $color-thingreen;
+}
+.bad-4 {
+  color: $color-thinorange;
+}

@@ -1,0 +1,21 @@
+{
+    "name" : "NAME",
+    "port": 8080,
+    "mysql":{
+        "ip" : "127.0.0.1",
+        "port": 27017
+    },
+    "mongodb" : {
+        "url": "mongodb://userweshoout:sLFFsn4vTaGr8UqG@ec2-100-24-190-97.compute-1.amazonaws.com:38967/weshoout?authSource=admin"
+        
+    },
+    "modules" : {
+        "auth" : {
+            "versions" : ["v10"]
+        },
+        "notifications" : {
+            "versions" : ["v10"]
+        }
+    }
+
+}

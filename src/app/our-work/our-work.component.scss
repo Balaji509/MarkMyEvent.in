@@ -1,0 +1,37 @@
+@import "../app.component.scss";
+@import "../utilities/colors.scss";
+@import "../utilities/animations.scss";
+
+.our-work-section {
+    margin-top: 3rem;
+
+    .container {
+        margin: 2rem auto;
+    }
+
+    .project-col {
+        padding: 20px;
+    }
+
+    .project-box {
+        background-color: black;
+        width: 340px;
+        height: 144px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .more {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more-btn {
+        height: 30px;
+        width: 80px;
+        border-radius: 15px;
+        // background-color:  $color-morebtncolor !important;
+    }
+
+}
