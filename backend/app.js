@@ -47,14 +47,14 @@ app.get('/', function (req, res) {
         }
     })
 })
-app.use('/ms/'+ config.modules.version + '/' + auth1.modName  , require('./app/'+modules.version+ '/' +auth1.modName+'/'+auth1.modName+'.js')(app) );
-/*_.forEach(config.modules, function(modValue, modName) {
+//app.use('/ms/'+ config.modules.version + '/' + auth1.modName  , require('./app/'+modules.version+ '/' +auth1.modName+'/'+auth1.modName+'.js')(app) );
+_.forEach(config.modules, function(modValue, modName) {
     _.forEach(modValue, function(value, key) {
         _.forEach(value, function(version) {
             app.use('/ms/'+ version + '/' + modName  , require('./app/'+version + '/' +modName+'/'+modName+'.js')(app) );
         });
     });
-});*/
+});
 
 app.use(function (req, res) {
     res.status(499).send({

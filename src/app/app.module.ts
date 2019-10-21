@@ -12,6 +12,8 @@ import { VendorComponent } from './vendor/vendor.component';
 import { ContactComponent } from './contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -30,7 +32,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

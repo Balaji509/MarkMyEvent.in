@@ -1,6 +1,22 @@
 @import "../app.component.scss";
 @import "../utilities/colors.scss";
 
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
 .contact-section {
 
     .container {
@@ -8,8 +24,8 @@
     }
 
     .vl {
-        border-left: 1px solid green;
-        height: 300px;
+        border-left: 0.1rem solid $color-black;
+        height: 18rem;
         display: block;
         margin-top: auto;
         margin-bottom: auto;
@@ -25,12 +41,12 @@
 
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 20px;
-        width: 400px;
-        height: 550px;
+        padding: 1rem;
+        width: 25rem;
+        height: 35rem;
         background-color: $color-formcolor;
         margin-top: 4rem;
-        border-radius: 25px;
+        border-radius: 2rem;
     }
 
     .c-title {
@@ -41,7 +57,7 @@
     }
 
     .c-head {
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .input {
@@ -62,12 +78,20 @@
     }
 
     .more-btn {
-        height: 40px;
-        width: 120px;
-        border-radius: 20px;
+        width: 5rem;
+        border-radius: 2rem;
         color: $color-white;
         border-color: $color-white;
+        font-family: 'Sue Ellen Francisco', cursive;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $color-white;
+        color: $color-black;
+        z-index: 2;
         // background-color:  $color-morebtncolor !important;
+        &:hover {
+            background-color: $color-lightgrey;
+        } 
     }
 
     .addrss-logo {
@@ -84,6 +108,7 @@
     .address {
         display: inline-block;
         vertical-align: middle;
+        margin-top: 8rem;
     }
 
 }

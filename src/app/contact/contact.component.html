@@ -15,13 +15,11 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 project-col">
-                                <select class="form-control select" id="sel1" name="date">
-                                    <option class="select">Date of the event</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
+                                <input type="text"
+                                placeholder="Date Of Event"
+                                class="form-control input"
+                                [bsConfig]="dpConfig"
+                                bsDatepicker>
                             </div>
                         </div>
                         <div class="row">
@@ -42,7 +40,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12 project-col">
-                                <textarea class="form-control input" rows="3" id="Requirement Details" name="details"></textarea>
+                                <textarea class="form-control input" rows="4" id="Requirement Details" name="details" placeholder="Requirement Details"></textarea>
                             </div>
                         </div>
                         <div class="row more">
@@ -51,7 +49,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1 vl"></div>
+            <div class="col-md-1 v1">
+            </div>
             <div class="col-md-4">
                     <div class="container">
                         <div class="row">

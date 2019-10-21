@@ -14,9 +14,9 @@
     }
 
     .project-box {
-        background-color: black;
-        width: 340px;
-        height: 144px;
+        background-color: $color-black;
+        width: 20rem;
+        height: 12rem;;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -28,10 +28,19 @@
     }
 
     .more-btn {
-        height: 30px;
-        width: 80px;
-        border-radius: 15px;
-        // background-color:  $color-morebtncolor !important;
+        height: 2.5rem;
+        width: 7rem;
+        font-size: 1rem;
+        border-radius: 1.2rem;
+        color: $color-primary;
+        border-color: $color-primary;
+        font-family: 'Sue Ellen Francisco', cursive;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+            background-color: $color-lightgrey;
+        } 
     }
 
 }

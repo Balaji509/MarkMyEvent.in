@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker/ngx-bootstrap-datepicker';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public dpConfig: Partial<BsDatepickerConfig> = new BsDatepickerConfig();
+  constructor() { 
+    this.dpConfig.containerClass = 'theme-dark-blue';
+  }
 
   ngOnInit() {
   }
